@@ -16,3 +16,7 @@ func ConvertStringListToIntList(list []string) []int {
 func SplitLine(line string) []string {
 	return strings.Split(line, " ")
 }
+
+func ReadLines(filename string) ([]string, error) {
+	return ReadLinesFromFile(filename)
+}
